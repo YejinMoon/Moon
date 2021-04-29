@@ -1,0 +1,95 @@
+body {
+  margin:0;
+}
+a {
+  color:black;
+  text-decoration: none;
+}
+
+#logo{
+  text-align: center;
+  width:100%;
+  padding-top: 30px;
+  padding-bottom: 27px;
+}
+
+#menu{
+  font-family: "Playfair Display", regular;
+  font-size:25px;
+  text-align: center;
+  width:100%;
+  padding: 10px;
+  margin-bottom: 40px;
+  display:grid;
+  grid-template-columns:20% 20% 20% 20% 20%;
+}
+
+#menu span {
+    border-right:2px solid black;
+}
+#menu span:last-child {
+    border-right:none;
+}
+#main {
+  padding-left:15px;
+  padding-right:15px;
+}
+#article {
+  font-family: "DNanum Gothic Coding", regular;
+  padding-top:40px;
+  padding-left:15px;
+  padding-right:15px;
+  font-size: 20px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+
+@media(max-width:1000px) {
+  #menu span {
+    font-size:20px;
+  }
+  #logo {
+    padding-bottom: 15px;
+  }
+}
+@media(max-width:900px) {
+  #menu span {
+    font-size:17px;
+  }
+  #logo {
+    padding-bottom: 6px;
+  }
+}
+@media(max-width:720px) {
+  #menu span {
+    font-size:14px;
+    border-right:none;
+    text-align: center;
+  }
+  #logo {
+    padding-bottom:none;
+  }
+  #logo img {
+    width:70%;
+  }
+}
+@media(max-width:530px) {
+  #menu span {
+    font-size:14px;
+    border-right:none;
+    text-align: center;
+    display:block;
+    border-bottom: 1px solid black;
+  }
+#menu {
+  display:block;
+}
+#logo {
+  padding-bottom:none;
+}
+
+}
+#disqus_thread {
+  padding:30px;
+}
